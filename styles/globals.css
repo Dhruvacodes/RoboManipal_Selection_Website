@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F7F4ED;
+  --ink: #1A1815;
+  --gold: #C5A059;
+  --green: #2D5A27;
+  --brown: #8B7355;
+  --red: #C44536;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Courier Prime', monospace;
+  background-color: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--gold);
+  color: var(--ink);
+}
+
+/* Scanline animation for paper */
+@keyframes scanline {
+  0% {
+    top: -2px;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* Blinking cursor for terminal feel */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Subtle pulse for status indicator */
+@keyframes pulse-dot {
+  0%, 100% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.6;
+    transform: scale(0.85);
+  }
+}
+
+/* Typing animation for loading text */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Stamp animation for result */
+@keyframes stamp {
+  0% {
+    transform: scale(3) rotate(-15deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1) rotate(-15deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) rotate(-12deg);
+    opacity: 0.15;
+  }
+}
+
+/* Rainbow shimmer for reveal heading */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Float animation for celebrate */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Heavy pulse for urgent popups */
+@keyframes pulse-heavy {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 12px 12px 0 #C44536;
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 14px 14px 0 #C44536;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brown);
+  border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ink);
+}
