@@ -6,7 +6,7 @@ import LoadingSequence from '@/components/LoadingSequence';
 import GridBackground from '@/components/GridBackground';
 import BrutalistButton from '@/components/BrutalistButton';
 import { motion } from 'framer-motion';
-import { useCallback, useState } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 
 export default function RevealPage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -14,6 +14,21 @@ export default function RevealPage() {
   const handleLoadingComplete = useCallback(() => {
     setIsLoading(false);
   }, []);
+
+  useEffect(() => {
+    if (!isLoading) {
+      const audio = new Audio('/Rick-roll.mp3');
+      audio.loop = true;
+      audio.volume = 0.5;
+      audio.play().catch(() => {
+        // Audio autoplay may be blocked by browser
+        console.log('Audio autoplay was blocked');
+      });
+      return () => {
+        audio.pause();
+      };
+    }
+  }, [isLoading]);
 
   const PremiumCard = ({
     children,
@@ -54,29 +69,47 @@ export default function RevealPage() {
 
   return (
     <div
-      className="min-h-screen relative py-12 md:py-16 transition-colors duration-[1.2s]"
+      className={`min-h-screen relative py-12 md:py-16 transition-colors duration-[1.2s] ${!isLoading ? 'gradient-animated' : ''}`}
       style={{
         background: isLoading
           ? '#F7F4ED'
-          : `linear-gradient(135deg, #0D1117 0%, #1a2a2e 25%, #0f1419 50%, #1a1515 75%, #0D1117 100%)`,
+          : undefined,
       }}
     >
-      {!isLoading && (
-        <>
-          {/* Animated gradient orbs - only on dark theme */}
-          <div
-            className="fixed inset-0 pointer-events-none overflow-hidden"
-            style={{
-              background: `
-                radial-gradient(circle at 20% 50%, rgba(197, 160, 89, 0.06) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(74, 222, 128, 0.06) 0%, transparent 50%),
-                radial-gradient(circle at 40% 20%, rgba(196, 69, 54, 0.04) 0%, transparent 50%)
-              `,
-            }}
-          />
+      <style>{`
+        @keyframes gradientShift {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        .gradient-animated {
+          background: linear-gradient(-45deg, #0D1117, #1a2a2e, #0f1419, #1a1515, #0D1117);
+          background-size: 400% 400%;
+          animation: gradientShift 15s ease infinite;
+        }
+      `}</style>
+        {!isLoading && (
+          <>
+            {/* Animated gradient orbs - only on dark theme */}
+            <div
+              className="fixed inset-0 pointer-events-none overflow-hidden"
+              style={{
+                background: `
+                  radial-gradient(circle at 20% 50%, rgba(197, 160, 89, 0.06) 0%, transparent 50%),
+                  radial-gradient(circle at 80% 80%, rgba(74, 222, 128, 0.06) 0%, transparent 50%),
+                  radial-gradient(circle at 40% 20%, rgba(196, 69, 54, 0.04) 0%, transparent 50%)
+                `,
+              }}
+            />
 
-          {/* Grid overlay */}
-          <motion.div
+            {/* Grid overlay */}
+            <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
