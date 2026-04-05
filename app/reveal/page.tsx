@@ -145,285 +145,297 @@ export default function RevealPage() {
                 </div>
               </PremiumCard>
 
-              {/* TENSION BREAK */}
-              <PremiumCard delay={0.08} borderColor="#C44536" accentColor="#C44536">
-                <div className="space-y-5 relative z-10">
-                  <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#C44536' }}>
-                    That Verification Test?
-                  </h2>
+              {/* VERIFICATION & EMOTIONAL PAYOFF - SIDE BY SIDE */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 md:gap-8">
+                {/* TENSION BREAK */}
+                <PremiumCard delay={0.08} borderColor="#C44536" accentColor="#C44536">
+                  <div className="space-y-5 relative z-10">
+                    <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#C44536' }}>
+                      That Verification Test?
+                    </h2>
 
-                  <div className="space-y-3 text-base">
-                    <p style={{ color: '#F7F4ED' }}>
-                      <span style={{ color: '#C44536', fontWeight: 'bold' }}>Completely rigged.</span>
-                    </p>
-                    <p style={{ color: '#F7F4ED' }}>
-                      There was no correct answer.
-                    </p>
-                  </div>
-
-                  <div style={{ height: '1px', backgroundColor: 'rgba(196, 69, 54, 0.3)' }} />
-
-                  <div className="space-y-3 text-base">
-                    <p style={{ color: '#A8BCC1' }}>
-                      We weren't testing your answers.
-                    </p>
-                    <p style={{ color: '#A8BCC1' }} className="font-semibold">
-                      We were watching how you deal with not having one.
-                    </p>
-                  </div>
-                </div>
-              </PremiumCard>
-
-              {/* EMOTIONAL PAYOFF */}
-              <PremiumCard delay={0.16} borderColor="#C5A059" accentColor="#C5A059">
-                <div className="space-y-6 relative z-10">
-                  <p className="text-lg" style={{ color: '#F7F4ED' }}>
-                    Everything you just went through was completely designed to test your character.
-                  </p>
-
-                  <div
-                    className="border-l-4 p-6"
-                    style={{
-                      borderColor: '#4ADE80',
-                      backgroundColor: 'rgba(74, 222, 128, 0.1)',
-                    }}
-                  >
-                    <p className="text-base leading-relaxed font-bold" style={{ color: '#4ADE80' }}>
-                      The fact that you tried, analyzed, and cared? That's exactly who we want.
-                    </p>
-                  </div>
-                </div>
-              </PremiumCard>
-
-              {/* WHAT YOU EXPERIENCED */}
-              <PremiumCard delay={0.24} borderColor="#C44536" accentColor="#C44536">
-                <div className="space-y-6 relative z-10">
-                  <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#C44536' }}>
-                    You Just Experienced
-                  </h2>
-
-                  <div className="space-y-2">
-                    <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(196, 69, 54, 0.1)' }}>
-                      <div className="text-lg font-bold" style={{ color: '#C44536' }}>✗</div>
-                      <p style={{ color: '#F7F4ED' }}>Overthinking every detail</p>
+                    <div className="space-y-3 text-base">
+                      <p style={{ color: '#F7F4ED' }}>
+                        <span style={{ color: '#C44536', fontWeight: 'bold' }}>Completely rigged.</span>
+                      </p>
+                      <p style={{ color: '#F7F4ED' }}>
+                        There was no correct answer.
+                      </p>
                     </div>
-                    <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(196, 69, 54, 0.1)' }}>
-                      <div className="text-lg font-bold" style={{ color: '#C44536' }}>✗</div>
-                      <p style={{ color: '#F7F4ED' }}>The panic of rejection</p>
-                    </div>
-                    <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(196, 69, 54, 0.1)' }}>
-                      <div className="text-lg font-bold" style={{ color: '#C44536' }}>✗</div>
-                      <p style={{ color: '#F7F4ED' }}>Self-doubt</p>
+
+                    <div style={{ height: '1px', backgroundColor: 'rgba(196, 69, 54, 0.3)' }} />
+
+                    <div className="space-y-3 text-base">
+                      <p style={{ color: '#A8BCC1' }}>
+                        We weren't testing your answers.
+                      </p>
+                      <p style={{ color: '#A8BCC1' }} className="font-semibold">
+                        We were watching how you deal with not having one.
+                      </p>
                     </div>
                   </div>
+                </PremiumCard>
 
-                  <div style={{ height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.1)' }} />
-
-                  <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.1)' }}>
-                    <div className="text-lg font-bold" style={{ color: '#4ADE80' }}>✓</div>
-                    <p style={{ color: '#F7F4ED' }}>But you kept trying</p>
-                  </div>
-                </div>
-              </PremiumCard>
-
-              {/* WHY YOU PASSED */}
-              <PremiumCard delay={0.32} borderColor="#4ADE80" accentColor="#4ADE80">
-                <div className="space-y-6 relative z-10">
-                  <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#4ADE80' }}>
-                    Why You Passed
-                  </h2>
-
-                  <div className="border-2 p-6" style={{ borderColor: '#4ADE80', backgroundColor: 'rgba(74, 222, 128, 0.05)' }}>
-                    <p className="text-lg font-bold" style={{ color: '#F7F4ED' }}>
-                      You passed. You're in the Research Subsystem.
+                {/* EMOTIONAL PAYOFF */}
+                <PremiumCard delay={0.16} borderColor="#C5A059" accentColor="#C5A059">
+                  <div className="space-y-6 relative z-10">
+                    <p className="text-lg" style={{ color: '#F7F4ED' }}>
+                      Everything you just went through was completely designed to test your character.
                     </p>
-                  </div>
 
-                  <div className="space-y-3 text-base">
-                    <p style={{ color: '#A8BCC1' }}>
-                      We don't pick people who always get things right.
-                    </p>
-                    <p style={{ color: '#A8BCC1' }}>
-                      We pick people who don't shut down when things don't make sense.
-                    </p>
-                    <p style={{ color: '#A8BCC1' }}>
-                      People who stay, think, and push anyway.
-                    </p>
-                  </div>
-                </div>
-              </PremiumCard>
-
-              {/* BEHAVIORAL ANALYSIS REPORT */}
-              <PremiumCard delay={0.40} borderColor="#C5A059" accentColor="#C5A059">
-                <div className="space-y-5 relative z-10">
-                  <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#C5A059' }}>
-                    Behavioral Analysis Report
-                  </h2>
-
-                  <div style={{ height: '1px', background: 'linear-gradient(90deg, #C5A059, transparent)' }} />
-
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
-                      <span>Time spent staring at screen:</span>
-                      <span style={{ color: '#C44536', fontWeight: 'bold' }}>Concerning</span>
-                    </div>
-                    <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
-                      <span>Number of re-reads:</span>
-                      <span style={{ color: '#C44536', fontWeight: 'bold' }}>We counted</span>
-                    </div>
-                    <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
-                      <span>Attempts to reverse-engineer:</span>
-                      <span style={{ color: '#4ADE80', fontWeight: 'bold' }}>Respectable</span>
-                    </div>
-                    <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
-                      <span>Emotional damage:</span>
-                      <span style={{ color: '#C44536', fontWeight: 'bold' }}>Non-zero</span>
-                    </div>
-                    <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
-                      <span>Confidence before submit:</span>
-                      <span style={{ color: '#C44536', fontWeight: 'bold' }}>Unstable</span>
-                    </div>
-                    <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
-                      <span>Thought "this is a trick":</span>
-                      <span style={{ color: '#4ADE80', fontWeight: 'bold' }}>Correct, still suffered</span>
+                    <div
+                      className="border-l-4 p-6"
+                      style={{
+                        borderColor: '#4ADE80',
+                        backgroundColor: 'rgba(74, 222, 128, 0.1)',
+                      }}
+                    >
+                      <p className="text-base leading-relaxed font-bold" style={{ color: '#4ADE80' }}>
+                        The fact that you tried, analyzed, and cared? That's exactly who we want.
+                      </p>
                     </div>
                   </div>
-                </div>
-              </PremiumCard>
+                </PremiumCard>
+              </div>
 
-              {/* PERSONALITY CLASSIFICATION */}
-              <PremiumCard delay={0.48} borderColor="#4ADE80" accentColor="#4ADE80">
-                <div className="space-y-5 relative z-10">
-                  <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#4ADE80' }}>
-                    Personality Classification
-                  </h2>
+              {/* WHAT YOU EXPERIENCED & WHY YOU PASSED - SIDE BY SIDE */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 md:gap-8">
+                {/* WHAT YOU EXPERIENCED */}
+                <PremiumCard delay={0.24} borderColor="#C44536" accentColor="#C44536">
+                  <div className="space-y-6 relative z-10">
+                    <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#C44536' }}>
+                      You Just Experienced
+                    </h2>
 
-                  <p style={{ color: '#A8BCC1' }}>
-                    You have been classified as:
-                  </p>
+                    <div className="space-y-2">
+                      <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(196, 69, 54, 0.1)' }}>
+                        <div className="text-lg font-bold" style={{ color: '#C44536' }}>✗</div>
+                        <p style={{ color: '#F7F4ED' }}>Overthinking every detail</p>
+                      </div>
+                      <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(196, 69, 54, 0.1)' }}>
+                        <div className="text-lg font-bold" style={{ color: '#C44536' }}>✗</div>
+                        <p style={{ color: '#F7F4ED' }}>The panic of rejection</p>
+                      </div>
+                      <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(196, 69, 54, 0.1)' }}>
+                        <div className="text-lg font-bold" style={{ color: '#C44536' }}>✗</div>
+                        <p style={{ color: '#F7F4ED' }}>Self-doubt</p>
+                      </div>
+                    </div>
 
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
-                      <span style={{ color: '#A8BCC1' }}>☐</span>
-                      <span style={{ color: '#A8BCC1' }}>Calm under pressure</span>
-                    </div>
-                    <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
-                      <span style={{ color: '#A8BCC1' }}>☐</span>
-                      <span style={{ color: '#A8BCC1' }}>Mildly confused</span>
-                    </div>
-                    <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
-                      <span style={{ color: '#A8BCC1' }}>☐</span>
-                      <span style={{ color: '#A8BCC1' }}>Overthinking</span>
-                    </div>
-                    <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
-                      <span style={{ color: '#A8BCC1' }}>☐</span>
-                      <span style={{ color: '#A8BCC1' }}>Questioning life decisions</span>
-                    </div>
-                    <div className="flex items-center gap-3 p-3 rounded border-2" style={{ borderColor: '#4ADE80', backgroundColor: 'rgba(74, 222, 128, 0.15)' }}>
-                      <span style={{ color: '#4ADE80' }}>☑</span>
-                      <span style={{ color: '#4ADE80', fontWeight: 'bold' }}>Exactly what we were looking for</span>
+                    <div style={{ height: '1px', backgroundColor: 'rgba(255, 255, 255, 0.1)' }} />
+
+                    <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.1)' }}>
+                      <div className="text-lg font-bold" style={{ color: '#4ADE80' }}>✓</div>
+                      <p style={{ color: '#F7F4ED' }}>But you kept trying</p>
                     </div>
                   </div>
-                </div>
-              </PremiumCard>
+                </PremiumCard>
 
-              {/* Welcome to Research */}
-              <PremiumCard delay={0.56} borderColor="#4ADE80" accentColor="#2D5A27">
-                <div className="space-y-5 relative z-10">
-                  <div>
+                {/* WHY YOU PASSED */}
+                <PremiumCard delay={0.32} borderColor="#4ADE80" accentColor="#4ADE80">
+                  <div className="space-y-6 relative z-10">
                     <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#4ADE80' }}>
-                      Welcome to Research
+                      Why You Passed
                     </h2>
-                    <p className="text-xs mt-2" style={{ color: '#A8BCC1' }}>
-                      Where innovation meets rigor
-                    </p>
-                  </div>
 
-                  <div style={{ height: '1px', backgroundColor: 'rgba(74, 222, 128, 0.2)' }} />
+                    <div className="border-2 p-6" style={{ borderColor: '#4ADE80', backgroundColor: 'rgba(74, 222, 128, 0.05)' }}>
+                      <p className="text-lg font-bold" style={{ color: '#F7F4ED' }}>
+                        You passed. You're in the Research Subsystem.
+                      </p>
+                    </div>
 
-                  <div className="space-y-3 text-sm">
-                    <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
-                      <div className="text-lg font-bold mt-0.5" style={{ color: '#4ADE80' }}>✓</div>
-                      <div>
-                        <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Complexity is where growth happens</p>
-                        <p className="text-xs mt-1" style={{ color: '#A8BCC1' }}>When systems break, we learn what really matters</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
-                      <div className="text-lg font-bold mt-0.5" style={{ color: '#4ADE80' }}>✓</div>
-                      <div>
-                        <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Questions shape better solutions</p>
-                        <p className="text-xs mt-1" style={{ color: '#A8BCC1' }}>The right question unlocks what answers can't</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
-                      <div className="text-lg font-bold mt-0.5" style={{ color: '#4ADE80' }}>✓</div>
-                      <div>
-                        <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Failure is information, nothing more</p>
-                        <p className="text-xs mt-1" style={{ color: '#A8BCC1' }}>Use it to iterate. That's the research mindset.</p>
-                      </div>
+                    <div className="space-y-3 text-base">
+                      <p style={{ color: '#A8BCC1' }}>
+                        We don't pick people who always get things right.
+                      </p>
+                      <p style={{ color: '#A8BCC1' }}>
+                        We pick people who don't shut down when things don't make sense.
+                      </p>
+                      <p style={{ color: '#A8BCC1' }}>
+                        People who stay, think, and push anyway.
+                      </p>
                     </div>
                   </div>
+                </PremiumCard>
+              </div>
 
-                  <p className="text-sm font-bold pt-2" style={{ color: '#4ADE80' }}>
-                    You belong here.
-                  </p>
-                </div>
-              </PremiumCard>
-
-              {/* What to Bring */}
-              <PremiumCard delay={0.64} borderColor="#C5A059" accentColor="#C5A059">
-                <div className="space-y-5 relative z-10">
-                  <div>
+              {/* BEHAVIORAL ANALYSIS & PERSONALITY - SIDE BY SIDE */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 md:gap-8">
+                {/* BEHAVIORAL ANALYSIS REPORT */}
+                <PremiumCard delay={0.40} borderColor="#C5A059" accentColor="#C5A059">
+                  <div className="space-y-5 relative z-10">
                     <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#C5A059' }}>
-                      What to Bring
+                      Behavioral Analysis Report
                     </h2>
-                    <p className="text-xs mt-2" style={{ color: '#A8BCC1' }}>
-                      Physical and otherwise
+
+                    <div style={{ height: '1px', background: 'linear-gradient(90deg, #C5A059, transparent)' }} />
+
+                    <div className="space-y-2 text-sm">
+                      <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
+                        <span>Time spent staring at screen:</span>
+                        <span style={{ color: '#C44536', fontWeight: 'bold' }}>Concerning</span>
+                      </div>
+                      <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
+                        <span>Number of re-reads:</span>
+                        <span style={{ color: '#C44536', fontWeight: 'bold' }}>We counted</span>
+                      </div>
+                      <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
+                        <span>Attempts to reverse-engineer:</span>
+                        <span style={{ color: '#4ADE80', fontWeight: 'bold' }}>Respectable</span>
+                      </div>
+                      <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
+                        <span>Emotional damage:</span>
+                        <span style={{ color: '#C44536', fontWeight: 'bold' }}>Non-zero</span>
+                      </div>
+                      <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
+                        <span>Confidence before submit:</span>
+                        <span style={{ color: '#C44536', fontWeight: 'bold' }}>Unstable</span>
+                      </div>
+                      <div className="flex justify-between p-2" style={{ color: '#A8BCC1' }}>
+                        <span>Thought "this is a trick":</span>
+                        <span style={{ color: '#4ADE80', fontWeight: 'bold' }}>Correct, still suffered</span>
+                      </div>
+                    </div>
+                  </div>
+                </PremiumCard>
+
+                {/* PERSONALITY CLASSIFICATION */}
+                <PremiumCard delay={0.48} borderColor="#4ADE80" accentColor="#4ADE80">
+                  <div className="space-y-5 relative z-10">
+                    <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#4ADE80' }}>
+                      Personality Classification
+                    </h2>
+
+                    <p style={{ color: '#A8BCC1' }}>
+                      You have been classified as:
+                    </p>
+
+                    <div className="space-y-2 text-sm">
+                      <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
+                        <span style={{ color: '#A8BCC1' }}>☐</span>
+                        <span style={{ color: '#A8BCC1' }}>Calm under pressure</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
+                        <span style={{ color: '#A8BCC1' }}>☐</span>
+                        <span style={{ color: '#A8BCC1' }}>Mildly confused</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
+                        <span style={{ color: '#A8BCC1' }}>☐</span>
+                        <span style={{ color: '#A8BCC1' }}>Overthinking</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
+                        <span style={{ color: '#A8BCC1' }}>☐</span>
+                        <span style={{ color: '#A8BCC1' }}>Questioning life decisions</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 rounded border-2" style={{ borderColor: '#4ADE80', backgroundColor: 'rgba(74, 222, 128, 0.15)' }}>
+                        <span style={{ color: '#4ADE80' }}>☑</span>
+                        <span style={{ color: '#4ADE80', fontWeight: 'bold' }}>Exactly what we were looking for</span>
+                      </div>
+                    </div>
+                  </div>
+                </PremiumCard>
+              </div>
+
+              {/* WELCOME & WHAT TO BRING - SIDE BY SIDE */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 md:gap-8">
+                {/* Welcome to Research */}
+                <PremiumCard delay={0.56} borderColor="#4ADE80" accentColor="#2D5A27">
+                  <div className="space-y-5 relative z-10">
+                    <div>
+                      <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#4ADE80' }}>
+                        Welcome to Research
+                      </h2>
+                      <p className="text-xs mt-2" style={{ color: '#A8BCC1' }}>
+                        Where innovation meets rigor
+                      </p>
+                    </div>
+
+                    <div style={{ height: '1px', backgroundColor: 'rgba(74, 222, 128, 0.2)' }} />
+
+                    <div className="space-y-3 text-sm">
+                      <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
+                        <div className="text-lg font-bold mt-0.5" style={{ color: '#4ADE80' }}>✓</div>
+                        <div>
+                          <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Complexity is where growth happens</p>
+                          <p className="text-xs mt-1" style={{ color: '#A8BCC1' }}>When systems break, we learn what really matters</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
+                        <div className="text-lg font-bold mt-0.5" style={{ color: '#4ADE80' }}>✓</div>
+                        <div>
+                          <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Questions shape better solutions</p>
+                          <p className="text-xs mt-1" style={{ color: '#A8BCC1' }}>The right question unlocks what answers can't</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-3 p-3 rounded" style={{ backgroundColor: 'rgba(74, 222, 128, 0.06)' }}>
+                        <div className="text-lg font-bold mt-0.5" style={{ color: '#4ADE80' }}>✓</div>
+                        <div>
+                          <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Failure is information, nothing more</p>
+                          <p className="text-xs mt-1" style={{ color: '#A8BCC1' }}>Use it to iterate. That's the research mindset.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p className="text-sm font-bold pt-2" style={{ color: '#4ADE80' }}>
+                      You belong here.
                     </p>
                   </div>
+                </PremiumCard>
 
-                  <div style={{ height: '1px', background: 'linear-gradient(90deg, #C5A059, transparent)' }} />
+                {/* What to Bring */}
+                <PremiumCard delay={0.64} borderColor="#C5A059" accentColor="#C5A059">
+                  <div className="space-y-5 relative z-10">
+                    <div>
+                      <h2 className="text-2xl font-black uppercase tracking-wider" style={{ color: '#C5A059' }}>
+                        What to Bring
+                      </h2>
+                      <p className="text-xs mt-2" style={{ color: '#A8BCC1' }}>
+                        Physical and otherwise
+                      </p>
+                    </div>
 
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C5A059', backgroundColor: 'rgba(197, 160, 89, 0.05)' }}>
-                      <div style={{ color: '#C5A059', fontWeight: 'bold', marginTop: '2px' }}>●</div>
-                      <div>
-                        <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Your laptop (fully charged)</p>
-                        <p className="text-xs" style={{ color: '#A8BCC1' }}>We code with intention</p>
+                    <div style={{ height: '1px', background: 'linear-gradient(90deg, #C5A059, transparent)' }} />
+
+                    <div className="space-y-2 text-sm">
+                      <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C5A059', backgroundColor: 'rgba(197, 160, 89, 0.05)' }}>
+                        <div style={{ color: '#C5A059', fontWeight: 'bold', marginTop: '2px' }}>●</div>
+                        <div>
+                          <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Your laptop (fully charged)</p>
+                          <p className="text-xs" style={{ color: '#A8BCC1' }}>We code with intention</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C5A059', backgroundColor: 'rgba(197, 160, 89, 0.05)' }}>
-                      <div style={{ color: '#C5A059', fontWeight: 'bold', marginTop: '2px' }}>●</div>
-                      <div>
-                        <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Running shoes</p>
-                        <p className="text-xs" style={{ color: '#A8BCC1' }}>Research moves fast</p>
+                      <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C5A059', backgroundColor: 'rgba(197, 160, 89, 0.05)' }}>
+                        <div style={{ color: '#C5A059', fontWeight: 'bold', marginTop: '2px' }}>●</div>
+                        <div>
+                          <p style={{ color: '#F7F4ED', fontWeight: '600' }}>Running shoes</p>
+                          <p className="text-xs" style={{ color: '#A8BCC1' }}>Research moves fast</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C44536', backgroundColor: 'rgba(196, 69, 54, 0.08)' }}>
-                      <div style={{ color: '#C44536', fontWeight: 'bold', marginTop: '2px' }}>●</div>
-                      <div>
-                        <p style={{ color: '#C44536', fontWeight: '600' }}>Pink top & Green shorts (compulsory)</p>
-                        <p className="text-xs" style={{ color: '#A8BCC1' }}>Team colors. Non-negotiable.</p>
+                      <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C44536', backgroundColor: 'rgba(196, 69, 54, 0.08)' }}>
+                        <div style={{ color: '#C44536', fontWeight: 'bold', marginTop: '2px' }}>●</div>
+                        <div>
+                          <p style={{ color: '#C44536', fontWeight: '600' }}>Pink top & Green shorts (compulsory)</p>
+                          <p className="text-xs" style={{ color: '#A8BCC1' }}>Team colors. Non-negotiable.</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C5A059', backgroundColor: 'rgba(197, 160, 89, 0.05)' }}>
-                      <div style={{ color: '#C5A059', fontWeight: 'bold', marginTop: '2px' }}>●</div>
-                      <div>
-                        <p style={{ color: '#F7F4ED', fontWeight: '600' }}>1L Coke if you're late</p>
-                        <p className="text-xs" style={{ color: '#A8BCC1' }}>But please, be on time</p>
+                      <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C5A059', backgroundColor: 'rgba(197, 160, 89, 0.05)' }}>
+                        <div style={{ color: '#C5A059', fontWeight: 'bold', marginTop: '2px' }}>●</div>
+                        <div>
+                          <p style={{ color: '#F7F4ED', fontWeight: '600' }}>1L Coke if you're late</p>
+                          <p className="text-xs" style={{ color: '#A8BCC1' }}>But please, be on time</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C44536', backgroundColor: 'rgba(196, 69, 54, 0.08)' }}>
-                      <div style={{ color: '#C44536', fontWeight: 'bold', marginTop: '2px' }}>●</div>
-                      <div>
-                        <p style={{ color: '#C44536', fontWeight: '600' }}>Your genuine ideas & energy</p>
-                        <p className="text-xs" style={{ color: '#A8BCC1' }}>This is what we actually need</p>
+                      <div className="flex items-start gap-3 p-3 rounded border-l-2" style={{ borderColor: '#C44536', backgroundColor: 'rgba(196, 69, 54, 0.08)' }}>
+                        <div style={{ color: '#C44536', fontWeight: 'bold', marginTop: '2px' }}>●</div>
+                        <div>
+                          <p style={{ color: '#C44536', fontWeight: '600' }}>Your genuine ideas & energy</p>
+                          <p className="text-xs" style={{ color: '#A8BCC1' }}>This is what we actually need</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </PremiumCard>
+                </PremiumCard>
+              </div>
 
               {/* Countdown Timer */}
               <PremiumCard delay={0.72} borderColor="#C44536" accentColor="#C44536">
