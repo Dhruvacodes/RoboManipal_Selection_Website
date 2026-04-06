@@ -67,6 +67,9 @@ export default function DeviceRecommendationPopup() {
               <p className="text-brown">
                 <strong>Pro tip:</strong> This looks best on a laptop or desktop. Mobile works, but you'll miss the full experience.
               </p>
+              <p className="text-red">
+                <strong>Also:</strong> Turn your volume up. You might need it. 
+              </p>
             </motion.div>
 
             {/* Button */}

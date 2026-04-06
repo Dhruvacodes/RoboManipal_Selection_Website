@@ -34,7 +34,7 @@ export default function WorkshopPopup({
               stiffness: 300,
               damping: 25,
             }}
-            className="border-4 border-ink p-0 max-w-2xl w-full text-center overflow-hidden"
+            className="border-4 border-ink p-0 max-w-lg w-full text-center overflow-hidden"
             style={{
               boxShadow: '12px 12px 0 #C5A059',
               backgroundColor: '#F7F4ED',
@@ -54,7 +54,7 @@ export default function WorkshopPopup({
 
             {/* Details Section - Solid Background */}
             <div
-              className="p-10 space-y-5 text-left"
+              className="p-6 space-y-3 text-left"
               style={{
                 backgroundColor: '#F7F4ED',
               }}
@@ -63,7 +63,7 @@ export default function WorkshopPopup({
               <motion.div
                 animate={{ scale: [1, 1.15, 1], rotate: [0, 5, -5, 0] }}
                 transition={{ duration: 0.8, repeat: Infinity, delay: 0.2 }}
-                className="text-5xl text-center"
+                className="text-4xl text-center"
               >
                 🎊
               </motion.div>
@@ -73,7 +73,7 @@ export default function WorkshopPopup({
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-3xl md:text-4xl font-black uppercase tracking-tighter"
+                className="text-2xl md:text-3xl font-black uppercase tracking-tighter"
                 style={{ color: '#C5A059' }}
               >
                 Hold Your Horses!
@@ -84,16 +84,16 @@ export default function WorkshopPopup({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="space-y-3 text-sm"
+                className="space-y-2 text-xs"
               >
                 <p style={{ color: '#1A1815', fontWeight: 'bold' }}>
                   ⏰ Workshop at 6 PM
                 </p>
-                <ul className="space-y-2 text-xs" style={{ color: '#3d3d3d' }}>
-                  <li>📍 <strong>Dress Code:</strong> Pink top + Green shorts (COMPULSORY)</li>
-                  <li>👟 <strong>Footwear:</strong> Actual shoes (not flip-flops)</li>
-                  <li>🧠 <strong>Vibe:</strong> Come ready to move fast and build</li>
-                  <li>🚨 <strong>Late?</strong> Bring 1L Coke as tribute</li>
+                <ul className="space-y-1" style={{ color: '#3d3d3d' }}>
+                  <li>📍 <strong>Dress Code:</strong> Pink top + Green shorts</li>
+                  <li>👟 <strong>Footwear:</strong> Actual shoes</li>
+                  <li>🧠 <strong>Vibe:</strong> Come ready to build</li>
+                  <li>🚨 <strong>Late?</strong> Bring 1L Coke</li>
                 </ul>
               </motion.div>
 
@@ -102,17 +102,17 @@ export default function WorkshopPopup({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
-                className="text-base font-bold text-center"
+                className="text-sm font-bold text-center"
                 style={{ color: '#C5A059' }}
               >
-                See you in your finest pink and green combo! 🩷💚
+                See you in your finest pink and green combo! 💗💚
               </motion.p>
 
               {/* Click to close */}
               <motion.p
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
-                className="text-xs text-center uppercase tracking-wider"
+                className="text-[10px] text-center uppercase tracking-wider"
                 style={{ color: '#A8BCC1' }}
               >
                 Click anywhere to dismiss
