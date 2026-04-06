@@ -1,15 +1,17 @@
 'use client';
 
+import BrutalistButton from '@/components/BrutalistButton';
 import ConfettiEffect from '@/components/ConfettiEffect';
 import CountdownTimer from '@/components/CountdownTimer';
-import LoadingSequence from '@/components/LoadingSequence';
 import GridBackground from '@/components/GridBackground';
-import BrutalistButton from '@/components/BrutalistButton';
+import LoadingSequence from '@/components/LoadingSequence';
+import WorkshopPopup from '@/components/WorkshopPopup';
 import { motion } from 'framer-motion';
-import { useCallback, useState, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 export default function RevealPage() {
   const [isLoading, setIsLoading] = useState(true);
+  const [showWorkshopPopup, setShowWorkshopPopup] = useState(false);
 
   const handleLoadingComplete = useCallback(() => {
     setIsLoading(false);
@@ -94,6 +96,7 @@ export default function RevealPage() {
           animation: gradientShift 15s ease infinite;
         }
       `}</style>
+      <WorkshopPopup isOpen={showWorkshopPopup} onClose={() => setShowWorkshopPopup(false)} />
         {!isLoading && (
           <>
             {/* Animated gradient orbs - only on dark theme */}
@@ -525,10 +528,7 @@ export default function RevealPage() {
                 className="w-full flex flex-col gap-4"
               >
                 <BrutalistButton
-                  onClick={() => {
-                    // Action can be added here (e.g., navigate to next page)
-                    console.log('Entering Research System');
-                  }}
+                  onClick={() => setShowWorkshopPopup(true)}
                   className="text-lg py-4"
                   style={{
                     backgroundColor: '#4ADE80',
@@ -537,7 +537,7 @@ export default function RevealPage() {
                     borderColor: '#4ADE80',
                   }}
                 >
-                  ENTER RESEARCH SYSTEM →
+                  ENTER THE RESEARCH SUBSYSTEM →
                 </BrutalistButton>
                 <p className="text-center text-sm" style={{ color: '#A8BCC1' }}>
                   No more emotional damage. Probably.

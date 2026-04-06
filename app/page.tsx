@@ -1,10 +1,11 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
-import GridBackground from '@/components/GridBackground';
-import BrutalistCard from '@/components/BrutalistCard';
 import BrutalistButton from '@/components/BrutalistButton';
+import BrutalistCard from '@/components/BrutalistCard';
+import DeviceRecommendationPopup from '@/components/DeviceRecommendationPopup';
+import GridBackground from '@/components/GridBackground';
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 export default function LandingPage() {
   const router = useRouter();
@@ -12,6 +13,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen flex items-center justify-center relative px-4">
       <GridBackground />
+      <DeviceRecommendationPopup />
 
       <BrutalistCard className="p-10 md:p-14 max-w-2xl w-full relative z-10">
         {/* Top right session + timestamp */}
